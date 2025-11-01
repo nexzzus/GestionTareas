@@ -1,7 +1,11 @@
+using GestionTareas.Web;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.AddCustomConfig();
 
 var app = builder.Build();
 
