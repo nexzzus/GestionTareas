@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Gestor de Tareas Pro</title>
+
+    @await Html.PartialAsync("_Styles")
+</head>
+
+<body>
+@await Html.PartialAsync("_Header")
+
+<main class="main container-fluid">
+    @RenderBody()
+</main>
+
+@await Html.PartialAsync("_Footer")
+
+
+@await Html.PartialAsync("_Scripts")
+@await RenderSectionAsync("Scripts", required: false)
+
+@await Component.InvokeAsync("Notyf")
+</body>
+</html>

@@ -14,8 +14,10 @@ public class TaskEntity
     [MaxLength(264)]
     public string? Description { get; set; }
     
-    public DateTime Created { get; set; }
-    public DateTime Finished { get; set; }
+    public DateTime Created { get; set; } =  DateTime.Now;
     
-    public bool status { get; set; }
+    [Required]
+    public required DateTime Finished { get; set; }
+
+    public bool Status { get; set; } = false;
 }

@@ -1,0 +1,19 @@
+body {
+    background-color: #e9ecef; /* Fondo gris muy suave para destacar el formulario */
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.task-form-card {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating label {
+    color: #6c757d;
+}
